@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./1.css";
+import "./1.module.css";
+
 import { motion, useScroll } from "framer-motion";
-import logoImage from "./assets/profile.jpeg"; // Import the image
+import logoImage from "./assets/10.png"; // Import the image
+import Background from "./Background";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -14,13 +16,15 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className="min-h-screen bg-gray-900 w-full overflow-hidden">
+      {" "}
+      <Background />
+      <div className="min-h-screen bg-gray-900 w-full overflow-hidden z-10">
         <motion.div
           animate={{ opacity: 1 }}
           transition={{ ease: "easeOut", duration: 2 }}
-          className="w-full grid justify-center min-h-screen y:50 dark:bg-gray-900 bg-opacity-40 opacity-0"
+          className="w-full grid justify-center min-h-screen y:50 dark: bg-gray-900 bg-opacity-40 opacity-0"
         >
-          <div className="w-full px-4 py-32 max-w-6xl gap-24 h-fit md:grid grid-cols-5 items-center">
+          <div className="w-full px-4 py-32 max-w-6xl gap-24 h-fit md:grid bg-gray-900 grid-cols-5 items-center">
             <div className="order-2 col-span-2 felx justify-top  rounded opacity-1">
               <motion.div
                 animate={{ y: -15, opacity: 1 }}
@@ -30,7 +34,7 @@ const Home = () => {
                 <img
                   src={logoImage}
                   alt="Description"
-                  className="w-full h-full object-cover rounded-3xl z-[-1] "
+                  className="w-full h-full aspect-square  bg-gray-400 opacity-85 rounded-full object-cover z-[-1] "
                 />
                 {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-700 to-grey-200 rounded-3xl animate-pulse ease duration-5000"></div> */}
               </motion.div>

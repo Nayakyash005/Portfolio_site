@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion, useScroll } from "framer-motion";
 
 export default function Headers() {
   const [active, setActive] = useState("");
@@ -30,7 +31,13 @@ export default function Headers() {
   }, []);
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 overflow-hidden z-10">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <motion.div
+        initial={{ opacity: 0, y: -22 }}
+        whileInView={{ opacity: 1 }}
+        animate={{ y: 12, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+        className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
         <a
           href="#yellow"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -70,57 +77,93 @@ export default function Headers() {
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a
-                href="#"
-                className={
-                  "block py-2 px-3 rounded md:bg-transparent md:p-0  " +
-                  (active === "home" ? "text-blue-400" : "text-white")
-                }
-                aria-current="page"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={
-                  "block py-2 px-3 rounded md:bg-transparent md:p-0  " +
-                  (active === "about" ? "text-blue-400" : "text-white")
-                }
-                aria-current="page"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Contact
-              </a>
-            </li>
+            <motion.div
+              initial={{ opacity: 0, y: -22 }}
+              whileInView={{ opacity: 1 }}
+              animate={{ y: 12, opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 1 }}
+            >
+              <li>
+                <a
+                  href="#"
+                  className={
+                    "block py-2 px-3 rounded md:bg-transparent md:p-0  " +
+                    (active === "home" ? "text-blue-400" : "text-white")
+                  }
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: -12 }}
+              whileInView={{ opacity: 1 }}
+              animate={{ y: 12, opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 3 }}
+            >
+              <li>
+                <a
+                  href="#"
+                  className={
+                    "block py-2 px-3 rounded md:bg-transparent md:p-0  " +
+                    (active === "about" ? "text-blue-400" : "text-white")
+                  }
+                  aria-current="page"
+                >
+                  About
+                </a>
+              </li>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1 }}
+              animate={{ y: 12, opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 3 }}
+            >
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Services
+                </a>
+              </li>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -38 }}
+              whileInView={{ opacity: 1 }}
+              animate={{ y: 12, opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 3 }}
+            >
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Pricing
+                </a>
+              </li>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -42 }}
+              whileInView={{ opacity: 1 }}
+              animate={{ y: 12, opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 3 }}
+            >
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Contact
+                </a>
+              </li>
+            </motion.div>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </nav>
   );
 }

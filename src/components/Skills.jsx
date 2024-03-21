@@ -4,7 +4,7 @@ import logoImage5 from "./assets/5.png";
 import l1 from "./assets/1.png";
 import l2 from "./assets/8.png";
 import { motion, useScroll } from "framer-motion";
-import "./1.css";
+import "./1.module.css";
 
 export default function Skills() {
   const [isVisible, setIsVisible] = useState(true);
@@ -38,9 +38,12 @@ export default function Skills() {
           viewport={{ once: true, amount: 0.8 }}
           className="flex justify-center items-center  py-0 bg-gray-900"
         >
-          <div className="max-w-7xl flex gap-14">
+          <div className="max-w-7xl flex flex-wrap gap-14">
             {/* Card 1 */}
-            <div className="bg-gray-700 gap-5 px-5 rounded-lg p-6" id="kem">
+            <div
+              className="bg-gray-700 gap-5 max-w-96 px-5 rounded-lg p-6"
+              id="kem"
+            >
               <img
                 className="w-40 h-40 object-cover rounded-full mx-auto mb-4"
                 src={logoImage2}
@@ -57,7 +60,10 @@ export default function Skills() {
               </p>
             </div>
 
-            <div className="bg-gray-700 gap-5 px-5 rounded-lg p-6" id="kem">
+            <div
+              className="bg-gray-700 gap-5 max-w-96 px-5 rounded-lg p-6"
+              id="kem"
+            >
               <img
                 className="w-40 h-40 object-cover rounded-full mx-auto mb-4"
                 src={l2}
@@ -75,7 +81,7 @@ export default function Skills() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-gray-700 rounded-lg p-6" id="kem">
+            <div className="bg-gray-700 max-w-96 rounded-lg p-6" id="kem">
               <img
                 className="w-40 h-40 object-cover rounded-full mx-auto mb-4"
                 src={logoImage5}
@@ -93,6 +99,8 @@ export default function Skills() {
             </div>
           </div>
         </motion.div>
+        <br />
+        <br />
       </div>
     </>
   );

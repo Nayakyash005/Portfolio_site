@@ -1,8 +1,10 @@
 import "./App.css";
 import About from "./components/About";
+import Background from "./components/Background";
 import Headers from "./components/Headers";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
+import Tech from "./components/Tech";
 const App = () => {
   return (
     <>
@@ -18,6 +20,7 @@ const App = () => {
       {/* <div id="foot-2" className="h-screen w-full bg-red-500"></div> */}
       {/* <div id="foot-3" className="h-screen w-full bg-blue-200"></div> */}
       <Skills />
+      <Tech />
     </>
   );
 };
