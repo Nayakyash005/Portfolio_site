@@ -48,15 +48,18 @@ export default function () {
   };
 
   return (
-    <div className="bg-gray-900 justify-center item-center">
+    <div className="bg-gray-900 justify-center item-center ">
       <section class="justify-center items-center" id="contact">
         <h2 class="heading text-center scale-150 text-gray-200 md:p-10 md:mb-6">
           <i class="fas fa-headset"></i> Get in{" "}
           <span className="text-blue-600">Touch</span>
         </h2>
 
-        <div className="w-screen mt-20 sm:mt-0 justify-center items-center">
+        <div className="w-screen mt-20 sm:mt-0 px-5 justify-center items-center">
           <div class=" max-w-5xl mx-auto rounded-lg bg-gray-800 justify-center items-center border-gray-600 p-9 border">
+            <h2 className="text-white text-center">
+              Fill Up the <span className="text-blue-600">form </span>{" "}
+            </h2>
             <div class="content flex w-full justify-center items-center lg:grid grid-cols-2 flex-col md:gap-10">
               <div class="image-box hidden sm:block mt-10">
                 <img className="" draggable="false" src={img} alt="" />

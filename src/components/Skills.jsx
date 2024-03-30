@@ -18,7 +18,7 @@ export default function Skills() {
 
   return (
     <>
-      <div className="bg-gray-900 p-5">
+      <div id="skills" className="bg-gray-900 p-5">
         <motion.div
           initial={{ opacity: 0, y: -14 }}
           whileInView={{ opacity: 1, y: 14 }}

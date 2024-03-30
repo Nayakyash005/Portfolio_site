@@ -8,7 +8,7 @@ import logoImage4 from "./assets/6.gif";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 import { SiGithub } from "react-icons/si";
-export default function Projects() {
+export default function () {
   const arr = [
     {
       img: logoImage2,
@@ -37,7 +37,10 @@ export default function Projects() {
   ];
   return (
     <>
-      <div className="bg-gray-900 min-h-screen justify-center items-center">
+      <div
+        id="projects"
+        className="bg-gray-900 min-h-screen justify-center items-center"
+      >
         {/* <div className="absolute inset-0 dark:bg-gray-700 duration-1000 ease-linear "></div> */}
         <h1 className="relative z-index text-white text-6xl inset-0 text-center justify-center hover:cursor-pointer">
           Projects

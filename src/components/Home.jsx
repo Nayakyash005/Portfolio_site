@@ -5,7 +5,7 @@ import { motion, useScroll } from "framer-motion";
 import logoImage from "./assets/10.png"; // Import the image
 import Background from "./Background";
 
-const Home = () => {
+export default function () {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Home = () => {
       {" "}
       <Background />
       <div
-        className="min-h-screen bg-gray-900 w-full overflow-hidden z-10"
+        className="min-h-screen bg-gray-900 w-full px-8 py-5 overflow-hidden z-10"
         id="foot-1"
       >
         <br />
@@ -27,7 +27,7 @@ const Home = () => {
         <motion.div
           animate={{ opacity: 1 }}
           transition={{ ease: "easeOut", duration: 2 }}
-          className="w-full grid justify-center min-h-screen y:50 dark: bg-gray-900 md:mt-10 bg-opacity-40 opacity-0"
+          className="w-full grid justify-center px-5 min-h-screen y:50 dark: bg-gray-900 md:mt-10 bg-opacity-40 opacity-0"
         >
           <div className="w-full px-4 py-32 max-w-6xl gap-24 h-fit md:grid bg-gray-900 grid-cols-5 items-center">
             <div className="order-2 col-span-2 felx justify-top  rounded opacity-1">
@@ -77,7 +77,7 @@ const Home = () => {
                   type="button"
                   data-twe-ripple-init
                   data-twe-ripple-color="light"
-                  class="mb-2 inline-block rounded bg-[#333] px-4 py-2.5  ml-5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                  class="mb-2 inline-block rounded mt-14 sm:mt-auto bg-[#333] sm:px-4 mt-14 sm:mt-auto sm:py-2.5 px-2 py-2 justify-center h-fit md:h-full ml-5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
                 >
                   <span class="[&>svg]:h-4 [&>svg]:w-4">
                     <svg
@@ -96,7 +96,7 @@ const Home = () => {
                   type="button"
                   data-twe-ripple-init
                   data-twe-ripple-color="light"
-                  class="mb-2 inline-block rounded bg-[#1877f2] px-4 py-2.5 ml-5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                  class="mb-2 inline-block rounded bg-[#1877f2] sm:px-4 mt-14 sm:mt-auto sm:py-2.5 px-2 py-2 justify-center h-fit md:h-full ml-5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
                 >
                   <span class="[&>svg]:h-4 [&>svg]:w-4">
                     <svg
@@ -115,7 +115,7 @@ const Home = () => {
                   type="button"
                   data-twe-ripple-init
                   data-twe-ripple-color="light"
-                  class="mb-2 inline-block rounded bg-[#c13584] px-4 py-2.5 ml-5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                  class="mb-2 inline-block rounded bg-[#c13584] sm:px-4 mt-14 sm:mt-auto sm:py-2.5 px-2 py-2 justify-center h-fit md:h-full ml-5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
                 >
                   <span class="[&>svg]:h-4 [&>svg]:w-4">
                     <svg
@@ -135,6 +135,4 @@ const Home = () => {
       </div>
     </>
   );
-};
-
-export default Home;
+}
