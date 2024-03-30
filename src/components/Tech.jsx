@@ -16,7 +16,7 @@ export default function Tech() {
             My Tech-Stack
           </h1>
           <br />
-          <div className="flex flex-wrap gap-12 md:gap-32 md:px-20 py-10 justify-center scale-75 ml-20 bg-gray-900 md:mr-20">
+          <div className="flex flex-wrap gap-12 md:gap-32 md:px-20 py-10 justify-center scale-75 md:ml-20 bg-gray-900 md:mr-20">
             {texh.map((ele, i) => (
               <motion.div
                 initial={{ opacity: 0, y: -14 }} // Use the hexadecimal color value for "gray-900"

@@ -13,22 +13,36 @@
 .animate-pulse {
   animation: pulse 1.5s ease-in-out infinite;
 }
-@keyframes bounce {
-   0%,100%{
+/* @keyframes bounce {
+  0%,100%{
     transform: translateY(0px);
    }
-  20% {
-    transform: translateY(-40px);
+  30% {
+    transform: translateY(0px);
   }
-  60% {
-    transform: translateY(40px);
+  70% {
+    transform: translateY(0px);
   }
+} */
+
+@keyframes bounce_2 {
+  0%,100%{
+   transform: translateY(0px);
+  }
+ 30% {
+   transform: translateY(0px);
+ }
+ 70% {
+   transform: translateY(0px);
+ }
+}
+/* .animate-bounce {
+  animation: bounce 4s infinite;
 }
 
 .animate-bounce {
-  animation: bounce 2s infinite;
-}
-
+  animation: bounce 4s infinite;
+} */
 .grid {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;

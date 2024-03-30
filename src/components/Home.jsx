@@ -18,11 +18,16 @@ const Home = () => {
     <>
       {" "}
       <Background />
-      <div className="min-h-screen bg-gray-900 w-full overflow-hidden z-10">
+      <div
+        className="min-h-screen bg-gray-900 w-full overflow-hidden z-10"
+        id="foot-1"
+      >
+        <br />
+        <br />
         <motion.div
           animate={{ opacity: 1 }}
           transition={{ ease: "easeOut", duration: 2 }}
-          className="w-full grid justify-center min-h-screen y:50 dark: bg-gray-900 bg-opacity-40 opacity-0"
+          className="w-full grid justify-center min-h-screen y:50 dark: bg-gray-900 md:mt-10 bg-opacity-40 opacity-0"
         >
           <div className="w-full px-4 py-32 max-w-6xl gap-24 h-fit md:grid bg-gray-900 grid-cols-5 items-center">
             <div className="order-2 col-span-2 felx justify-top  rounded opacity-1">
