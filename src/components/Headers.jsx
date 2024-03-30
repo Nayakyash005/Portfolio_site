@@ -34,7 +34,7 @@ export default function Headers() {
 
   return (
     <nav
-      className="bg-white border-gray-200 dark:bg-gray-900 fixed w-full pt-4 duration-200 z-10"
+      className="bg-gray-900 fixed w-full pt-4 duration-200 z-10"
       id="nav"
       ref={navref}
     >
@@ -54,7 +54,7 @@ export default function Headers() {
             className="h-8"
             alt="Flowbite Logo"
           /> */}
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white hover:text-blue-600">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white hover:text-blue-600">
             Yash Nayak
           </span>
         </a>
