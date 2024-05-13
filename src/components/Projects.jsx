@@ -14,10 +14,12 @@ export default function () {
     {
       img: logoImage3,
       text: "I developed a dynamic blog website using HTML, EJS, and CSS for an engaging frontend, PostgreSQL for efficient data management, and Node.js for a robust backend. This project showcases my collaboration with full-stack developers to blend technical expertise with creative design, resulting in a seamless and visually appealing user interface.",
+      link: "https://github.com/Nayakyash005/Blog_site/commits?author=Nayakyash005",
     },
     {
       img: logoImage0,
       text: "A dynamic chat app that allows you to chat with your friends, I made this chat app using the react.JS framework in frontend and node.JS backend serving with express.JS. I use socketIO library for the web-socket connection, and tailwind CSS for the designing the website. And by using all this I made an dynamic chat app that stores the phone number, details and their chat they done with the other person in Postgres database",
+      link: "https://github.com/Nayakyash005/chat-app",
     },
     {
       img: logoImage5,
@@ -30,6 +32,7 @@ export default function () {
     {
       img: logoImage2,
       text: "I create a website with node.js and express.js Backend and Html,css ,Ejs javascript And using PredictHQ API to get the real time information of the on Going Events like ( Hackathon, fests, sports, festivals, concerts… Etc ). And also you can filter the events on your preference of your location",
+      link: "https://github.com/Nayakyash005/bnb_project",
     },
     {
       img: logoImage1,
@@ -69,14 +72,14 @@ export default function () {
                 <div className="flex gap-2 flex-wrap text-base">
                   <a
                     className="group flex items-center gap-2 bg-gray-700 hover:bg-gray-600 shadow-md transition text-white w-fit py-1.5 px-4 rounded"
-                    href=""
+                    href={ele.link}
                   >
                     <span>View</span>{" "}
                     <FaExternalLinkAlt className="h-4 w-4 group-hover:ml-2 duration-300" />
                   </a>
                   <a
                     className="group flex items-center gap-2 bg-gray-700 hover:bg-gray-600 shadow-md transition text-white w-fit py-1.5 px-4 rounded"
-                    href=""
+                    href={ele.link}
                   >
                     <span>Code</span>{" "}
                     <SiGithub className="h-5 w-5 group-hover:ml-2 duration-300" />
