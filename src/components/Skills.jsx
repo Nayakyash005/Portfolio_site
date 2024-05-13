@@ -62,19 +62,31 @@ export default function Skills() {
                   src={logoImage2}
                   alt="Front-End Development"
                 />
-                <h3 className="text-gray-200 text-2xl font-bold mb-2">
+                <h3 className="text-gray-200 text-2xl px-2 py-4 font-bold mb-4">
                   Front-End Development
                 </h3>
-                <p className="text-gray-300 text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  ipsam veritatis autem vitae quibusdam eaque accusantium hic.
-                  Deleniti, natus. Sequi neque illum blanditiis cumque veniam
-                  asperiores corporis perspiciatis quo alias?
-                </p>
+                <div className="">
+                  <p className="text-gray-300 max-h-44 overflow-y-scroll text-lg">
+                    I'm a frontend developer that thrives at creating visually
+                    stunning user experiences by combining JavaScript, HTML, and
+                    CSS. Having a thorough understanding of frontend frameworks
+                    such as React.js, my area of expertise is creating dynamic,
+                    responsive websites that offer flawless user experiences. I
+                    also know how to use template engines, including Embedded
+                    JavaScript (EJS), which makes data integration and
+                    server-side rendering go smoothly. In addition, I use
+                    contemporary CSS frameworks like Tailwind CSS to keep code
+                    uniformity and streamline design. I constantly produce
+                    aesthetically beautiful and user-friendly interfaces that
+                    increase user happiness and engagement by paying close
+                    attention to detail and making a commitment to keep up with
+                    the most recent developments in web development.
+                  </p>
+                </div>
               </motion.div>
 
               <motion.div
-                className="bg-gray-700 gap-5 max-w-96 px-5 rounded-lg p-6"
+                className="bg-gray-700 gap-5 max-w-96 px-5 max- rounded-lg p-6"
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 24 }}
                 transition={{ ease: "easeOut", duration: 2 }}
@@ -85,14 +97,21 @@ export default function Skills() {
                   src={l2}
                   alt="Front-End Development"
                 />
-                <h3 className="text-gray-200 text-2xl font-bold mb-2">
-                  Front-End Development
+                <h3 className="text-gray-200 text-2xl px-2 py-4 font-bold mb-4">
+                  Additional Skills
                 </h3>
-                <p className="text-gray-300 text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  ipsam veritatis autem vitae quibusdam eaque accusantium hic.
-                  Deleniti, natus. Sequi neque illum blanditiis cumque veniam
-                  asperiores corporis perspiciatis quo alias?
+                <p className="text-gray-300 max-h-44 overflow-y-scroll text-lg">
+                  Because of my excellent time management abilities, I can
+                  efficiently prioritise my work and stick to deadlines in a
+                  hectic work setting. I work best in cooperative team
+                  environments that encourage candid communication and
+                  cooperation to accomplish shared objectives. Having a natural
+                  tendency towards leadership, I provide direction and guidance
+                  as needed to guarantee project success and team cohesiveness.
+                  I'm also renowned for having a great work ethic and frequently
+                  going above and beyond to produce excellent results. I can
+                  easily handle problems and uphold a pleasant work atmosphere
+                  because of my empathy and understanding of team dynamics."
                 </p>
               </motion.div>
 
@@ -109,14 +128,18 @@ export default function Skills() {
                   src={logoImage5}
                   alt="Back-End Development"
                 />
-                <h3 className="text-gray-200 text-2xl font-bold mb-2">
+                <h3 className="text-gray-200 text-2xl px-2 py-4 font-bold mb-4">
                   Back-End Development
                 </h3>
-                <p className="text-gray-300 text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  ipsam veritatis autem vitae quibusdam eaque accusantium hic.
-                  Deleniti, natus. Sequi neque illum blanditiis cumque veniam
-                  asperiores corporis perspiciatis quo alias?
+                <p className="text-gray-300 max-h-44 overflow-y-scroll text-lg scrollbar-hide">
+                  "My area of expertise is Node.js backend programming; I am
+                  skilled with Express.js for creating reliable APIs and
+                  Socket.IO for instantaneous communication. competent in
+                  communicating with external APIs and using Axios for HTTP
+                  requests. Moreover, adept in managing databases, especially
+                  PostgreSQL, to guarantee effective data archiving and
+                  retrieval. My main goal is to provide web apps with scalable
+                  and maintainable solutions."
                 </p>
               </motion.div>
             </div>

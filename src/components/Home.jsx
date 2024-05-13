@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./1.module.css";
 
 import { motion, useScroll } from "framer-motion";
-import logoImage from "./assets/10.png"; // Import the image
+import logoImage from "./assets/10.png";
+import logoImage2 from "./assets/15.png"; // Import the image
 import Background from "./Background";
 
 export default function () {
@@ -37,7 +38,7 @@ export default function () {
                 className="relative overflow-hidden y:25 bottom-50 opacity-0 h-full w-full"
               >
                 <img
-                  src={logoImage}
+                  src={logoImage2}
                   alt="Description"
                   className="w-full h-full aspect-square  bg-gray-400 opacity-85 rounded-full object-cover z-[-1] "
                 />
@@ -60,10 +61,13 @@ export default function () {
                 </h2>
               </div>
               <p className="text-gray-700 text-2xl text-justify">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                iste beatae autem eveniet. Sapiente possimus temporibus
-                recusandae qui magni nesciunt autem modi maiores. Temporibus
-                corporis blanditiis libero aspernatur ipsam reiciendis.
+                I am a passionate programmer searching for a new position. I
+                have strong problem-solving abilities and good programming
+                skills in C++, Java, and JavaScript. I am good in working with
+                team and have great leadership abilities. I produce excellent
+                work because I have a strong interest in technology and pay
+                close attention to details. I'm excited to contribute to a
+                dynamic organization and dedicated to lifelong learning.
               </p>
 
               <br />

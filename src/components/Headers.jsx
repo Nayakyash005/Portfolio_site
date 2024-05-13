@@ -103,7 +103,7 @@ export default function Headers() {
           <a className="py-4 text-2xl" href="/#skills">
             Skills
           </a>
-          <a className="py-4 text-2xl" href="/#projects">
+          <a className="py-4   text-2xl" href="/#projects">
             Projects
           </a>
           <a className="py-4 text-2xl" href="/#contact">
