@@ -5,7 +5,7 @@ import About from "./components/About";
 import Background from "./components/Background";
 import Contact from "./components/contact";
 import Headers from "./components/Headers";
-import Home from "./components/Home";
+import Home from "./components/home";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Tech from "./components/Tech";
