@@ -22,7 +22,7 @@ export default function Skills() {
         <motion.div
           initial={{ opacity: 0, y: -14 }}
           whileInView={{ opacity: 1, y: 14 }}
-          transition={{ ease: "easeOut", duration: 2 }}
+          transition={{ ease: "easeOut", duration: 3 }}
           id="foot-3"
           className="bg-gray-900 grid col-span-2"
         >
