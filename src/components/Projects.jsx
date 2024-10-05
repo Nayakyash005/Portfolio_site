@@ -1,7 +1,7 @@
 import React from "react";
 import logoImage5 from "./assets/11.png";
 import logoImage2 from "./assets/2.gif";
-import logoImage3 from "./assets/3.gif";
+import logoImage3 from "./assets/project0.gif";
 import logoImage1 from "./assets/4.gif";
 import logoImage4 from "./assets/6.gif";
 import logoImage0 from "./assets/chat_ap.gif";
@@ -13,8 +13,8 @@ export default function () {
   const arr = [
     {
       img: logoImage3,
-      text: "I developed a dynamic blog website using HTML, EJS, and CSS for an engaging frontend, PostgreSQL for efficient data management, and Node.js for a robust backend. This project showcases my collaboration with full-stack developers to blend technical expertise with creative design, resulting in a seamless and visually appealing user interface.",
-      link: "https://github.com/Nayakyash005/Blog_site/commits?author=Nayakyash005",
+      text: "An online rail Madad portal that is Allow users to file complaints without having to worry about which categories and subcategories to file them under. Passengers can also track their complaints as we manage the complaints section. Additionally, we have an admin dashboard that allows the relevant department to receive the passenger's complaint log and modify the complaint's status as it is resolved.",
+      link: "https://github.com/Nayakyash005/rail_madad_sih",
     },
     {
       img: logoImage0,
