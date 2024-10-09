@@ -34,7 +34,7 @@ export default function Headers() {
 
   return (
     <nav
-      className="bg-gray-900 fixed w-full pt-4 duration-200 z-10"
+      className="shadow-lg fixed w-full pt-4 duration-200 z-10"
       id="nav"
       ref={navref}
     >

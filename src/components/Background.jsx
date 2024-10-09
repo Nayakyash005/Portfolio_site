@@ -3,7 +3,7 @@ import styles from "./1.module.css";
 
 export default function Background() {
   return (
-    <div className={styles.area + " bg-gray-900"}>
+    <div className={styles.area + " bg-gray-200"}>
       <ul class={styles.circles}>
         <li></li>
         <li></li>

@@ -74,6 +74,10 @@
     {
         "name": "postman",
         "icon": "https://voyager.postman.com/logo/postman-logo-icon-orange.svg"
+    },
+    {
+        "name":"Firebase",
+        "icon":"https://cdn.worldvectorlogo.com/logos/firebase-1.svg"
     }
      
 ]

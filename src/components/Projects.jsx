@@ -41,10 +41,7 @@ export default function () {
   ];
   return (
     <>
-      <div
-        id="projects"
-        className="bg-gray-900 min-h-screen justify-center items-center"
-      >
+      <div id="projects" className=" min-h-screen justify-center items-center">
         {/* <div className="absolute inset-0 dark:bg-gray-700 duration-1000 ease-linear "></div> */}
         <h1 className="relative z-index text-white text-6xl inset-0 text-center justify-center hover:cursor-pointer">
           Projects
@@ -55,30 +52,35 @@ export default function () {
         <div className="justify-center items-center text-center flex flex-wrap md:gap-12 p-4 gap-6 md:max-w-7xl mx-auto">
           {arr.map((ele, index) => {
             return (
-              <div className="max-w-96  bg-gray-800   text-gray-100 border border-gray-700 p-3  rounded-md flex flex-col gap-2">
+              <div
+                className="max-w-96   bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden
+                            shadow-[0_8px_16px_-6px] shadow-blue-500/20
+                            transition-all duration-300
+                            group-hover:shadow-[0_12px_24px_-8px] group-hover:shadow-blue-400/30 p-3"
+              >
                 <img
-                  className="w-full  aspect-video bg-gray-600 rounded"
+                  className="w-full  aspect-video bg-gray-200 rounded"
                   src={ele.img}
                   alt=""
                 />
                 <h2 className=" font-semibold px-1 text-xl max-h">
                   Project {index}
                 </h2>
-                <div className=" max-h-40 overflow-y-scroll px-5">
+                <div className=" max-h-40 overflow-y-auto group px-5 py-4 ">
                   <p className="text-gray-300 scroll max-h-96 text-lg text-justify px-1">
                     {ele.text}
                   </p>
                 </div>
-                <div className="flex gap-2 flex-wrap text-base">
+                <div className="flex gap-4 py-2 px-4 flex-wrap text-base">
                   <a
-                    className="group flex items-center gap-2 bg-gray-700 hover:bg-gray-600 shadow-md transition text-white w-fit py-1.5 px-4 rounded"
+                    className="group flex items-center gap-2 bg-blue-700 hover:bg-gray-200 shadow-md transition text-white hover:text-blue-600 w-fit py-1.5 px-4 rounded"
                     href={ele.link}
                   >
                     <span>View</span>{" "}
                     <FaExternalLinkAlt className="h-4 w-4 group-hover:ml-2 duration-300" />
                   </a>
                   <a
-                    className="group flex items-center gap-2 bg-gray-700 hover:bg-gray-600 shadow-md transition text-white w-fit py-1.5 px-4 rounded"
+                    className="group flex items-center gap-2 bg-pink-700 hover:bg-gray-200 shadow-md transition text-white hover:text-pink-600 w-fit py-1.5 px-4 rounded"
                     href={ele.link}
                   >
                     <span>Code</span>{" "}

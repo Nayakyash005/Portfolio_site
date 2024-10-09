@@ -48,18 +48,18 @@ export default function () {
   };
 
   return (
-    <div className="bg-gray-900 justify-center item-center ">
+    <div className=" justify-center item-center ">
       <section class="justify-center items-center" id="contact">
         <h2 class="heading text-center scale-150 text-gray-200 md:p-10 md:mb-6">
           <i class="fas fa-headset"></i> Get in{" "}
-          <span className="text-blue-600">Touch</span>
+          <span className="text-tealy-600">Touch</span>
         </h2>
 
         <div className="w-screen mt-20 sm:mt-0 px-5 justify-center items-center">
-          <div class=" max-w-5xl mx-auto rounded-lg bg-gray-800 justify-center items-center border-gray-600 p-9 border">
-            <h2 className="text-white text-center">
+          <div class=" max-w-5xl mx-auto rounded-lg  justify-center items-center  p-9 ">
+            {/* <h2 className="text-white text-center">
               Fill Up the <span className="text-blue-600">form </span>{" "}
-            </h2>
+            </h2> */}
             <div class="content flex w-full justify-center items-center lg:grid grid-cols-2 flex-col md:gap-10">
               <div class="image-box hidden sm:block mt-10">
                 <img className="" draggable="false" src={img} alt="" />
@@ -71,7 +71,7 @@ export default function () {
                 className="py-8 px-2 w-full text-gray-300"
               >
                 <div className="form-group ">
-                  <div class="field flex bg-slate-700 h-3xl border border-gray-500 mb-7 rounded-lg gap-5">
+                  <div class="field flex bg-slate-700 h-3xl border  mb-7 rounded-lg gap-5">
                     <div className="text-white rounded-lg scale-75 md:ml-3 mx-auto py-3 justify-center items-center bg-slate-700 border-gray-300">
                       <FaUser />
                     </div>
@@ -98,7 +98,7 @@ export default function () {
                     />
                     <i class="fas fa-envelope"></i>
                   </div>
-                  <div class="field flex bg-slate-700 h-3xl mb-7 border border-gray-500 rounded-lg gap-5">
+                  <div class="field flex bg-slate-700 h-3xl mb-7 border border-gray rounded-lg gap-5">
                     <div className="text-white rounded-lg items-center scale-75 md:ml-3 py-3 bg-slate-700 border-gray-300">
                       <FaPhoneAlt />
                     </div>
@@ -124,7 +124,7 @@ export default function () {
                   </div>
                 </div>
                 <div
-                  class="button-area flex bg-blue-800 text-white text-center h-3xl mb-7 max-w-full justify-center items-center rounded-lg gap-2 hover:scale-105 hover:bg-slate-50 hover:text-blue-600"
+                  class="button-area flex bg-pink-800 text-white text-center h-3xl mb-7 max-w-full justify-center items-center rounded-lg gap-2 hover:scale-105 hover:bg-slate-50 hover:text-pink-600"
                   style={{ boxShadow: "4px 4px 5px black" }}
                 >
                   <button className="text-center text-xl " type="submit">
